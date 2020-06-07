@@ -63,4 +63,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        commit: 9307a2b14f156466eda2549b858c6ed7b4accee8
+        tag: v0.4.0
