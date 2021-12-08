@@ -54,7 +54,7 @@ modules:
     builddir: true
     sources:
       - type: git
-        tag: 1.18.3
+        tag: 1.18.5
         url: https://github.com/freedesktop/gstreamer.git
 
   - name: gst-python
@@ -65,7 +65,7 @@ modules:
       - --libdir=lib
     sources:
       - type: git
-        tag: 1.18.3
+        tag: 1.18.5
         url: https://github.com/freedesktop/gstreamer-gst-python.git
 
   - name: intltool
@@ -80,15 +80,26 @@ modules:
       - --disable-python-bindings
     sources:
       - type: git
+        tag: libpwquality-1.4.4
         url: https://github.com/libpwquality/libpwquality.git
+
+  - name: libhandy
+    buildsystem: meson
+    builddir: true
+    config-opts:
+      - -Dtests=false
+      - -Dexamples=false
+    sources:
+      - type: git
+        tag: 1.5.0
+        url: https://github.com/GNOME/libhandy.git
 
   - name: libndp
     buildsystem: autotools
     sources:
       - type: git
-        branch: v1.6
+        tag: v1.8
         url: https://github.com/jpirko/libndp.git
-        commit: 2f721c4ff519f38f46695a60d9f9d88f35bf3c1d
 
   # This depend on linux-pam, but don't know how to include it,
   - name: polkit
@@ -146,7 +157,8 @@ modules:
       - '*.a'
     sources:
       - type: git
-        url: git://github.com/gentoo/eudev.git
+        tag: v3.2.10
+        url: https://github.com/eudev-project/eudev.git
 
   - name: NetworkManager
     buildsystem: meson
@@ -188,4 +200,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        tag: v0.8.0
+        tag: v0.9.6
