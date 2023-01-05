@@ -186,4 +186,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        tag: v0.9.9
+        tag: v0.9.10
