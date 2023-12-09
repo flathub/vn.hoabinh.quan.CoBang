@@ -1,6 +1,6 @@
 app-id: vn.hoabinh.quan.CoBang
 runtime: org.gnome.Platform
-runtime-version: '43'
+runtime-version: '44'
 sdk: org.gnome.Sdk
 command: cobang
 finish-args:
@@ -186,4 +186,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        tag: v0.10.1
+        tag: v0.10.2
