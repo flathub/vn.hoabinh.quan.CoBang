@@ -41,7 +41,7 @@ modules:
   - name: python3-build-tools
     buildsystem: simple
     build-commands: [
-      'python3 -m pip install -U --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} --no-build-isolation wheel setuptools flit-core'
+      'python3 -m pip install -U --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} wheel setuptools flit-core'
     ]
     sources:
       - type: file
