@@ -199,4 +199,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        tag: v0.10.6
+        tag: v0.10.7
