@@ -79,6 +79,7 @@ modules:
     builddir: true
     sources:
       - type: git
+        disable-submodules: true
         tag: 1.24.3
         url: https://github.com/GStreamer/gstreamer.git
 
@@ -199,4 +200,4 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/hongquan/CoBang.git'
-        tag: v0.12.0
+        tag: v0.13.0
