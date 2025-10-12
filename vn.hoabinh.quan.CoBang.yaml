@@ -1,6 +1,6 @@
 id: vn.hoabinh.quan.CoBang
 runtime: org.gnome.Platform
-runtime-version: '47'
+runtime-version: '48'
 sdk: org.gnome.Sdk
 command: cobang
 finish-args:
@@ -44,7 +44,7 @@ modules:
 
 - name: python3-build-tools
   buildsystem: simple
-  build-commands: [ 'python3 -m pip install -U --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} wheel setuptools flit-core cffi gitlint' ]
+  build-commands: [ 'python3 -m pip install -U --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} wheel setuptools flit-core cffi' ]
   sources:
   - type: file
     url: https://files.pythonhosted.org/packages/55/3a/5121b58b578a598b269537e09a316ad2a94fdd561a2c6eb75cd68578cc6b/setuptools-69.0.3-py3-none-any.whl
@@ -211,7 +211,7 @@ modules:
   sources:
   - type: git
     url: https://gitlab.gnome.org/jwestman/blueprint-compiler
-    tag: v0.16.0
+    tag: v0.18.0
 
 - name: cobang
   builddir: true
@@ -219,4 +219,4 @@ modules:
   sources:
   - type: git
     url: 'https://github.com/hongquan/CoBang.git'
-    tag: v1.8.0
+    tag: v1.8.1
